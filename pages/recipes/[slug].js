@@ -37,6 +37,10 @@ export async function getStaticProps({ params }) {
   };
 }
 
+const loaderProp = ({ src }) => {
+  return src;
+};
+
 export default function RecipeDetails({ recipe }) {
   const { featuredImage, title, cookingTime, ingredients, method } =
     recipe.fields;
@@ -47,6 +51,7 @@ export default function RecipeDetails({ recipe }) {
           src={'https://' + featuredImage.fields.file.url}
           width={featuredImage.fields.file.details.image.width}
           height={featuredImage.fields.file.details.image.height}
+          loader={loaderProp}
         />
         <h2>{title}</h2>
       </div>
