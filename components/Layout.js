@@ -6,17 +6,17 @@ export default function Layout({ children }) {
       <header>
         <Link href="/">
           <h1>
-            <span>Just Add</span>
-            <span>Marmite</span>
+            <span>This is a</span>
+            <span>Donald Duck</span>
           </h1>
-          <h2>Spread The Joy</h2>
+          <h2>appreciation site</h2>
         </Link>
       </header>
 
       <div className="page-content">{children}</div>
 
       <footer>
-        <p>Copyright 2021 Just Add Marmite :)</p>
+        <p>Copyright 2021 Disney Corp O</p>
       </footer>
     </div>
   );

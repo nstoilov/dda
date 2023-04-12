@@ -70,13 +70,13 @@ export default function RecipeDetails({ recipe }) {
         <h2>{title}</h2>
       </div>
       <div className="info">
-        <p>Takes about {cookingTime} minutes to cook</p>
-        <h3>Ingredients:</h3>
+        <p>Takes about {cookingTime} minutes to appreciate</p>
+        <h3>Unrelated cooking ingredients:</h3>
         {ingredients.map((ingredient, index) => (
           <span key={ingredient + index}>{ingredient}</span>
         ))}
         <div className="method">
-          <h3>Method</h3>
+          <h3>Summary</h3>
           <div>{documentToReactComponents(method)}</div>
         </div>
       </div>
